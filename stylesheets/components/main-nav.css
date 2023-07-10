@@ -1,1 +1,8 @@
 /* Your code here */
+nav ul {
+    display: flex;
+    font-size: 12px;
+    justify-content: center;
+    gap: 20px;
+    margin: 10px 0;
+}

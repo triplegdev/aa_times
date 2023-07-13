@@ -64,6 +64,10 @@
     padding-bottom: 11px;
 }
 
+.masthead__logo img {
+    width: initial;
+}
+
 .masthead__paper {
     border-bottom: 1px solid #e2e2e2;
     grid-area: paper;

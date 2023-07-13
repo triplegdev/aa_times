@@ -5,7 +5,8 @@
     grid-template-areas:
         "menu . action"
         "tech tech tech"
-        "date logo paper"
+        "date logo paper";
+    padding-top: 10px;
 }
 
 .masthead__menu-and-search {
@@ -20,7 +21,6 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-top: 10px;
 }
 
 .masthead__technologies {
@@ -49,8 +49,8 @@
 
 .masthead__date {
     border-bottom: 1px solid #e2e2e2;
-    font-size: 11px;
     grid-area: date;
+    padding-left: 10px;
     padding-bottom: 11px;
 }
 
@@ -69,19 +69,27 @@
     grid-area: paper;
     justify-content: flex-end;
     padding-bottom: 11px;
+    padding-right: 10px;
 }
 
 .masthead__date,
 .masthead__paper {
-    display: flex;
     align-items: flex-end;
+    display: flex;
+    font-size: 11px;
+    line-height: normal;
 }
 
 .icon-box {
+    cursor: pointer;
     font-size: 11px;
     padding: 7px 9px;
 }
 
 .icon-box:hover {
     background-color: #f7f7f5;
+}
+
+.fa-newspaper {
+    padding-right: 3px;
 }

@@ -6,3 +6,9 @@ nav ul {
     gap: 20px;
     margin: 10px 0;
 }
+
+@media (max-width: 999px) {
+    nav {
+        display: none;
+    }
+}

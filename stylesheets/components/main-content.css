@@ -1,1 +1,218 @@
 /* Your code here */
+/* Overriding global/reset css */
+h1 {
+    font-size: 2em;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-weight: bold;
+}
+
+header {
+    position: relative;
+    padding: 0;
+}
+/*---------------------------------*/
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 10px;
+    line-height: normal;
+}
+
+main ul {
+    margin-left: 16px;
+}
+
+.main {
+    border-right: 1px solid #e2e2e2;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 50px;
+}
+
+.main__article-vid {
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: 3fr 2fr;
+    grid-template-areas:
+        "title title"
+        "content vid";
+    padding-right: 15px;
+}
+
+.main__heading {
+    grid-area: title;
+    font-size: 1.7em;
+    margin-bottom: 15px;
+}
+
+.main__article {
+    grid-area: content;
+}
+
+.main__article .article__title {
+    font-size: 1.3em;
+}
+
+.main__vid {
+    grid-area: vid;
+}
+
+.main__vid iframe {
+    margin-bottom: 5px;
+}
+
+.main__articles {
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #130f0f;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    height: fit-content;
+    margin-right: 1px;
+}
+
+.main__articles article {
+    padding: 5px 10px 50px 10px;
+}
+
+.main__articles article:nth-child(1) {
+    border-right: 1px solid #e2e2e2;
+}
+
+.main__articles .article__title,
+.main__articles .article__byline {
+    margin: 5px 0;
+}
+
+.main li,
+.main p,
+.sidebar p,
+.main__vid {
+    font-size: 0.8em;
+    line-height: 20px;
+    list-style: disc;
+    margin-bottom: 12px;
+}
+
+.sidebar {
+    display: grid;
+    /* grid-template-rows: repeat(3, 1fr); */
+    padding-left: 15px;
+    height: fit-content;
+}
+
+.main__articles p,
+.sidebar p {
+    line-height: 17px;
+}
+
+.sidebar__opinions,
+.sidebar__operations {
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.sidebar__opinions > h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.article__title{
+    font-size: 1.2em;
+    margin-bottom: 25px;
+}
+
+.sidebar .article__title,
+.main__articles .article__title {
+    font-size: 1em;
+}
+
+.sidebar__operations h3 {
+    font-size: .7em;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.sidebar article a {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.sidebar__operations .article__byline {
+    margin-bottom: 20px;
+}
+
+.sidebar__operations p {
+    margin: 15px 0;
+}
+
+
+.sidebar__opinions .article__byline {
+    margin-bottom: 30px;
+}
+
+.article__byline {
+    font-family: georgia,"times new roman",times,serif;
+    font-size: 0.75em;
+    color: #999;
+    margin: 10px 0;
+}
+
+article a {
+    color: #326891;
+    font-size: .65em;
+}
+
+.article_img {
+    background-image: url('../../images/new_office.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100px;
+}
+
+.sidebar__articles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sidebar__left-articles {
+    border-right: 1px solid #e2e2e2;
+    padding-right: 5px;
+}
+
+.sidebar__right-articles {
+    padding-left: 5px;
+}
+
+.sidebar__articles .article__title {
+    font-size: .8em;
+    margin-bottom: 10px;
+}
+
+.sidebar__articles .article__byline {
+    margin-bottom: 4px;
+    text-transform: capitalize;
+}
+
+.sidebar__articles article:not(:last-child) {
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.sidebar__right-articles .article__byline {
+    margin-top: 18px;
+}
+
+@media screen and (max-width: 1199px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+    .main {
+        border: none;
+    }
+    .main__article-vid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .sidebar {
+        display: none;
+    }
+}

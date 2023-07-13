@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
   console.log('event-handling.js script was successfully loaded');
-  const cogIcon = document.querySelector('.fas.fa-cog');
+  const cogIcon = document.querySelector('#cog');
   cogIcon.addEventListener('click', event => {
     console.log('Gear clicked');
     event.stopPropagation();
@@ -12,7 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.pref').classList.add('pref--hidden');
   });
 
-  const searchIcon = document.querySelector('.fa.fa-search');
+  const searchIcon = document.querySelector('#search');
   searchIcon.addEventListener('click', () => {
     console.log('Search clicked');
     const modal = document.querySelector('.search-modal');

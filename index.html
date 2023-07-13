@@ -15,14 +15,18 @@
                 <div class="icon-box">
                     <i class="fa fa-bars"></i>
                 </div>
-                <div class="icon-box">
+                <div id="search" class="icon-box">
                     <i class="fa fa-search"></i>
+                </div>
+                <div class="search-modal search-modal--hidden">
+                    <input type="search" class="search-modal__input" placeholder="Search">
+                    <button class="search-model__go">Go</button>
                 </div>
             </div>
             <div class="masthead__actions">
                 <button>Subscribe Now</button>
                 <button>Log In</button>
-                <div class="icon-box">
+                <div id="cog" class="icon-box">
                     <i class="fas fa-cog"></i>
                 </div>
             </div>
@@ -36,9 +40,7 @@
                 <img src="./images/AA_Times_Logo.png" alt="AA Times Logo">
             </div>
             <div class="masthead__paper">
-                <div class="icon-box">
-                    <i class="far fa-newspaper"></i> Today's Paper
-                </div>
+                <i class="far fa-newspaper"></i> Today's Paper
             </div>
         </div>
         <nav>
@@ -89,8 +91,143 @@
             <img class="interest-bar__image" src="./images/sun-icon.png" alt="sun">
             <div class="interest-bar__big-text">77℉</div>
         </section>
+        <div class="pref pref--hidden">
+            <div class="pref__section">
+              <div class="pref__section-header">Edition</div>
+              <ul>
+                <li class="pref__section-link"><a href="#">CSS</a></li>
+                <li class="pref__section-link"><a href="#">HTML</a></li>
+                <li class="pref__section-link"><a href="#">JavaScript</a></li>
+                <li class="pref__section-link"><a href="#">Python</a></li>
+              </ul>
+            </div>
+            <div class="pref__section">
+              <div class="pref__section-header">Help</div>
+              <ul>
+                <li class="pref__section-link"><a href="#">FAQ</a></li>
+                <li class="pref__section-link"><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
     </header>
-    <main></main>
+    <main>
+        <section class="main">
+            <section class="main__article-vid">
+                <h1 class="main__heading"><em>How App Academy Students Change Their Lives</em></h1>
+                <article class="main__article">
+                    <header class="article__header">
+                        <h1 class="article__title"><em>App Academy Instructors on React & Redux</em></h1>
+                        <h2 class="article__byline">
+                            By <span class="article__author">APP ACADEMY INSTRUCTIONAL TEAM</span>
+                        </h2>
+                    </header>
+                    <ul>
+                        <li>
+                            It helps you write applications that behave consistently, run in different environments (client, server, and native), and are easy to test. On top of that, it provides a great developer experience, such as live code editing combined with a time traveling debugger.
+                        </li>
+                        <li>
+                            The whole state of your app is stored in an object tree inside a single store. The only way to change the state tree is to emit an action, an object describing what happened. To specify how the actions transform the state tree, you write pure reducers.
+                        </li>
+                    </ul>
+                    <a href="#">1738 Comments</a>
+                </article>
+                <div class="main__vid">
+                    <iframe width="100%" height="280" src="https://www.youtube.com/embed/ARe9FupzuOA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    Warning: This video will make you want to change your career
+                </div>
+
+            </section>
+            <section class="main__articles">
+                <article>
+                    <header class="article__header">
+                        <h1 class="article__title">Where are they now?</h1>
+                        <h2 class="article__byline">
+                            By <span class="article__author">APP ACADEMY ALUMNI</span>
+                        </h2>
+                    </header>
+                    <p>
+                        First hand stories from App Academy graduates about transitioning to engineering positions at top tech companies in San Francisco.
+                    </p>
+                </article>
+                <article>
+                    <header class="article__header">
+                        <h1 class="article__title">Cat Academy</h1>
+                        <h2 class="article__byline">
+                            By <span class="article__author">APP ACADEMY DIRECTOR OF PRODUCTS</span>
+                        </h2>
+                    </header>
+                    <p>
+                        App Academy's latest product targets those interested in owning the popular feline companion by providing a curated cat care curriculum. Breakfast, Markov, Curie, Jet, and Freyja are all modern day celebrities due to their App Academy example fame.
+                    </p>
+                </article>
+            </section>
+        </section>
+        <section class="sidebar">
+            <article class="sidebar__opinions">
+                <h1>Opinions</h1>
+                <header class="article__header">
+                    <h2 class="article__byline">
+                        By <span class="article__author">Breakfast the Cat</span>
+                    </h2>
+                    <h1 class="article__title">Will Javascript ever be as easy as Python?</h1>
+                </header>
+                <p>
+                    JavaScript continues to advance with the newly released EcmaScript8 but it still doesn't quite read like Python.
+                </p>
+                <a href="#">299 Comments</a>
+            </article>
+            <article class="sidebar__operations">
+                <header class="article__header">
+                    <h3>Operations</h3>
+                    <h1 class="article__title">App Academy New York Has A Brand New Office</h1>
+                    <h2 class="article__byline">
+                        By <span class="article__author">NY OPERATIONS</span>
+                    </h2>
+                </header>
+                <div class="article_img"></div>
+                <p>
+                First hand stories from App Academy graduates about transitioning to
+                engineering positions at top tech companies in San Francisco.
+                </p>
+                <a href="#">172 Comments</a>
+            </article>
+            <section class="sidebar__articles">
+                <div class="sidebar__left-articles">
+                    <article>
+                        <h2 class="article__byline">torvalds</h2>
+                        <h1 class="article__title">When I Was Almost Wrong</h1>
+                    </article>
+                    <article>
+                        <h2 class="article__byline">knuth</h2>
+                        <h1 class="article__title">Art of Programming</h1>
+                    </article>
+                    <article>
+                        <h2 class="article__byline">lovelace</h2>
+                        <h1 class="article__title">The First Algorithm</h1>
+                    </article>
+                    <article>
+                        <h2 class="article__byline">hopper</h2>
+                        <h1 class="article__title">The First Bug</h1>
+                    </article>
+                </div>
+                <div class="sidebar__right-articles">
+                    <article>
+                        <h2 class="article__byline">thompson</h2>
+                        <h1 class="article__title">Go C Unix</h1>
+                    </article>
+                    <article>
+                        <h2 class="article__byline">carmack</h2>
+                        <h1 class="article__title">My Virtual Reality</h1>
+                    </article>
+                    <article>
+                        <h2 class="article__byline">stallman</h2>
+                        <h1 class="article__title">Free Speech Not Free Coffee</h1>
+                    </article>
+                </div>
+            </section>
+        </section>
+    </main>
     <footer></footer>
+    <script src="./scripts/event-handling.js"></script>
 </body>
 </html>
